@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrest bill</title>
+</head>
+<body>
+    <script>
+        var u,t,s,a;
+        u=435;
+        document.write("Input: "+ "<br>");
+        document.write("Enter electricity units:"+u+"<br>");
+    if(u<=50){
+  t=u*0.50;
+}
+else if(u<=150){
+  t=25+((u-50)*0.75);
+}
+else if(u<=250){
+  t=100+((u-150)*1.20);
+}
+else{
+  t=220+((u-250)*1.50);
+}
+s=t*0.20;
+a=t+s;
+document.write("<br> Output: "+ "<br>");
+document.write("Total amount of Electricity bill is "+a+"<br>");
+    </script>
+</body>
+</html>
