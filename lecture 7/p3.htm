@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progrram 1</title>
+</head>
+<body>
+    <script>
+        var lang=(parseInt(prompt("Enter the choice:  ")));
+
+        document.write("Press 1 for English...");
+        document.write("<br> Press 2 for Hindi...");
+        document.write("<br> Press 3 for Gujarati...");
+
+        
+        switch(lang){
+            case 1:
+                document.write("<br> <br> Press 1 for Internet Recharge...");
+                document.write("<br> Press 2 for Top-up Recharge...");
+                document.write("<br> Press 3 for Special Recharge...");
+
+                var service=(parseInt(prompt("Enter the  choice:  ")));
+                switch(service){
+                    case 1: 
+                    document.write("<br> <br>You have successfully done Internet Recharge...");
+                    break;
+
+                    case 2: 
+                    document.write("<br> <br>You have successfully done Top-up Recharge...");
+                    break;
+
+                    case 3: 
+                    document.write("<br> <br>You have successfully done Special Recharge...");
+                    break;
+
+                    default:
+                        document.write("Invalid Choice..!");
+                }
+                break;
+                case 2:
+                document.write("<br> <br> Internet Recharge ke liye 1 dabaiye...");
+                document.write("<br> Top-up Recharge ke liye 2 dabiye...");
+                document.write("<br> Spacial Recharge ke liye 3 dabiye...");
+
+                var service=(parseInt(prompt("Enter the  choice:  ")));
+                switch(service){
+                    case 1: 
+                    document.write("<br> <br> Apka Internet Recharge saflatapurvak ho gaya hai...");
+                    break;
+
+                    case 2: 
+                    document.write("<br> <br> Apka Top-up Recharge saflatapurvak ho gaya hai...");
+                    break;
+
+                    case 3: 
+                    document.write("<br> <br> Apka Spacial Recharge saflatapurvak ho gaya hai...");
+                    break;
+
+                    default:
+                        document.write("Invalid Choice..!");
+                }
+                break;
+
+                case 3:
+                document.write("<br> <br> Internet Recharge mate 1 dabavo...");
+                document.write("<br> Top-up Recharge mate 2 dabavo...");
+                document.write("<br> Spacial Recharge mate 3 dabavo...");
+
+                var service=(parseInt(prompt("Enter the  choice:  ")));
+                switch(service){
+                    case 1: 
+                    document.write("<br> <br> Tamaru Internet Recharge saflatapurvak thai gayu che...");
+                    break;
+
+                    case 2: 
+                    document.write("<br> <br> Tamaru Top-up Recharge saflatapurvak thai gayu che...");
+                    break;
+
+                    case 3: 
+                    document.write("<br> <br> Tamaru Spacial Recharge saflatapurvak thai gayu che...");
+                    break;
+
+                    default:
+                        document.write("Invalid Choice..!");
+                }
+                default:
+                    document.write("<br> <br> Invalid Choice..!");
+        }
+        
+    </script>
+</body>
+</html>

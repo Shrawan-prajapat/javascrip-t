@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p7</title>
+</head>
+<body>
+    <script>
+        var physics=(parseInt(prompt("Enter your marks of physics: ")));
+        var chemistry=(parseInt(prompt("Enter your marks of chemistry: ")));
+        var maths=(parseInt(prompt("Enter your marks of maths: ")));
+        var biology=(parseInt(prompt("Enter your marks of biology: ")));
+        var computer=(parseInt(prompt("Enter your marks of computer: ")));
+
+        sum=(physics+chemistry+maths+biology)/500*100;
+
+        console.log(sum+"%");
+
+        if(sum>=90&&sum<=100){
+            console.log("Grade : A");
+        }
+        else if(sum>=80&&sum<=89){
+            console.log("Grade : B");
+        }
+        else if(sum>=70&&sum<=79){
+            console.log("Grade : C");
+        }
+        else if(sum>=60&&sum<=69){
+            console.log("Grade : D");
+        }
+        else if(sum>=50&&sum<=59){
+            console.log("Grade : E");
+        }
+        else if(sum>=40&&sum<=49){
+            console.log("Grade : F");
+        }
+    </script>
+</body>
+</html>

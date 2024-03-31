@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="font-size: 40px;">See code in console</p>
+    <script>
+        const num=89;
+        var guess=(parseInt(prompt("Enter the number: ")));
+        
+        if(guess==num){
+            console.log("Congratulation ! You Guessed it Right number!");
+        }
+        else if(guess<=num){
+            console.log("It's low! Try a higher number.");
+        }
+        else{
+            console.log("It's high! Try a lower number.");
+        }
+    </script>
+</body>
+</html>
