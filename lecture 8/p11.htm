@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p11</title>
+</head>
+<body>
+    <script>
+        var a=(parseInt(prompt("Enter the first number: ")));
+        var b=(parseInt(prompt("Enter the second number: ")));
+
+        document.write("Press + for addition.");
+        document.write("<br>Press - for substractiion.");
+        document.write("<br>Press * for multiplication.");
+        document.write("<br>Press / for division.");
+
+       var choice=(prompt("Enter your choice: "));
+       console.log("A = "+a);
+       console.log("B = "+b);
+
+       if(choice=='+'){
+                var sum=a+b;
+                console.log(a+" + "+b+" = "+sum);
+       }else if(choice=='-'){
+                var sum=a-b;
+                console.log(a+" - "+b+" = "+sum);
+       }else if(choice=='*'){
+                var sum=a*b;
+                console.log(a+" * "+b+" = "+sum);
+       }else if(choice=='/'){
+                var sum=a/b;
+                console.log(a+" / "+b+" = "+sum);
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progrram 4</title>
+</head>
+<body>
+    <script>
+        document.write("Press 1 to apply red light...");
+        document.write("<br>Press 2 to apply yellow light...");
+        document.write("<br>Press 3 to apply green light...");
+
+        document.write("<br>---------------------------------------");
+        var choice=(parseInt(prompt("Enter your choice: ")));
+
+        switch(choice){
+            case 1:
+                document.write("<br><br>You must have to stop. ");
+                break;
+
+                case 2:
+                document.write("<br><br>You must have to slow down. ");
+                break;
+
+                case 3:
+                document.write("<br><br>You can go now. ");
+                break;
+
+                default:
+                    document.write("<br><br>Error! Please give a valid input.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progrram 3</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+    <script>
+        
+        switch(new Date().getDay()){
+         
+
+                case 6:
+                day="This is Saturday";
+                break;
+
+                case 7:
+                day="This is Sunday";
+                break;
+
+                default:
+                    day="Looking forward for the weekend";
+        }
+        document.getElementById("demo").innerHTML = day;
+    </script>
+</html>
