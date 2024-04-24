@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progrram 4</title>
+</head>
+<body>
+    <script>
+        var a=(parseInt(prompt("Enter the first number: ")));
+        var b=(parseInt(prompt("Enter the second number: ")));
+        var c=(parseInt(prompt("Enter the third number: ")));
+        var d=(parseInt(prompt("Enter the fourth number: ")));
+
+       
+
+        function result(a,b,c,d){
+          
+
+            if (a>b) {
+                return "A is grater...";
+            }else if (b>c) {
+                return "B is grater...";
+            }else if (c>d) {
+                return "C is grater...";
+            }else if (d>a) {
+                return "D is grater...";
+            } 
+        }
+        console.log("A : "+a);
+        console.log("B : "+b);
+        console.log("C : "+c);
+        console.log("D : "+d);
+        console.log("Ans : "+result(a,b,c,d))
+    </script>
+</body>
+</html>

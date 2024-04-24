@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+        }
+        table tr td input{
+            background-color: ;
+            width: 50px;
+            height: 100%;
+            border-radius: 10px;
+            font-size: 20px;
+            
+        }
+
+        table tr td{
+            border: none;
+        }
+        table{
+            border-spacing: 10px;
+            margin-top: 200px;            
+        }
+        table .dis{
+           padding-left: 10px;
+        }
+    </style>
+    <table width="200" class="" height="350" border="1" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
+        <tr class="d-flex">
+            <td width="100% " colspan="4" >
+                <input type="text" class="dis"  style="background-color: #5f6861e6;width: 100%;height: 100%;" name="display" id="display">
+            </td>
+            
+        </tr>
+        <tr>
+            <td width="25%  " style="background-color: ;">
+                <input type="button" value="1" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="2" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="3" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="/" onclick="addToDisplay">
+            </td>
+            
+
+           
+
+            
+        </tr>
+        <tr>
+            <td width="25%  ">
+                <input type="button" value="4" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="5" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="6" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="*" onclick="addToDisplay">
+            </td>
+        </tr>
+        <tr>
+            
+            <td width="25%  ">
+                <input type="button" value="7" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="8" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="9" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="-" onclick="addToDisplay">
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td width="25%  ">
+                <input type="button" value="." onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="0" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button" value="C" onclick="addToDisplay">
+            </td>
+            <td width="25%  ">
+                <input type="button"class="eval" value="=" onclick="Calc()">
+            </td>
+        </tr>
+    </table>
+
+    
+
+<script>
+     function addToDisplay(value) {
+            var display = document.getElementById("display");
+            display.value += value;
+        }
+        function cleardisplay() {
+            var display = document.getElementById("display");
+            display.value = '';
+        }
+        function Calc() {
+            var display = document.getElementById("display");
+            display.value = eval(display.value);
+        }
+</script>
+</body>
+</html>
