@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;    
+          
+            
+        }
+        .d-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        #count {
+            margin: 0 50px;
+        }
+
+        button {
+            background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed);
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            box-shadow: inset -2px -2px -2px rgba(255, 255, 255, 0.2),
+            inset 2px 5px 15px rgba(0, 0, 0, 0.5);
+            color: white;
+           
+        }
+        button:active{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+           
+            transition: 2s;
+        }
+
+        .main {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 60px;
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            border-radius: 8px;
+           
+        }
+        #reset{
+           width: 139px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main " style="flex-direction: column;">
+        <h1 style="font-size: 70px;font-weight: 700;margin-bottom: 10px;color: white;">Js Counter</h1>
+        <div class="d-flex" style="padding-top: 30px;padding-bottom: 30px;">
+            <button id="increment"  style="font-size: 30px;">+</button>
+            <div id="count" style="font-size: 50px;color: white;">0</div>
+            <button id="decrement" style="font-size: 30px;">-</button>
+        </div>
+        <button id="reset"style="font-size: 30px;">Reset</button>
+    </div>
+
+<script>
+    let counter=0;
+
+    const increments=document.getElementById("increment");
+    const decrements=document.getElementById("decrement");
+    const counts=document.getElementById("count");
+    const resets=document.querySelector("#reset");
+
+    increments.addEventListener('click',() =>{
+        counter++;
+        counts.innerHTML=counter;
+    });
+
+    decrements.addEventListener('click',() =>{
+        if(counter > 0){
+            counter--;
+        }
+        counts.innerHTML=counter;
+    });
+
+    resets.addEventListener('click',() =>{
+        counter=0;
+        counts.innerHTML=counter;
+    });
+
+    
+ 
+
+</script>
+</body>
+
+</html>

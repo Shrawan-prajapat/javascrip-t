@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="stopbirthday()">Stop!</button>
+
+    <script>
+        const bod=setTimeout(birthday,1000);
+
+        function birthday(){
+            document.getElementById("demo").innerHTML="Happy birthday";
+        }
+        function stopbirthday(){
+            clearTimeout(bod);
+        }
+    </script>
+</body>
+</html>
