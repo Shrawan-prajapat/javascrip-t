@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="icon" href="assets/img/io.png">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white  ">
+       <div class="container">
+         <img src="https://zerocreativity0.wordpress.com/wp-content/uploads/2016/05/tanishq-logo.jpg?w=736" alt="" width="150">
+         <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#bhuro" aria-controls="navbarSupportedContent" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav  mb-2 mb-lg-0 " style="margin-left: 150px;">
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="index.html">Home</a>
+             </li>
+            
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="#">GOLD</a>
+             </li>
+
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="#">DIAMOND</a>
+             </li>
+
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="#">
+                 RINGS</a>
+             </li>
+
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="#">
+                 
+BESTSELLERS</a>
+             </li>
+
+             <li class="nav-item me-3">
+               <a class="nav-link text-black me-5" href="#">
+                 
+MIA
+</a>
+             </li>
+
+             
+
+             
+             <li class="nav-item">
+               <a class="nav-link text-black me-2" href="">
+                 EARRINGS
+                 </a>
+             </li>
+
+             
+             
+
+            
+   
+           </ul>
+         
+         </div> 
+       </div>
+     </nav>
+     <div class="offcanvas offcanvas-start show" tabindex="-1" id="bhuro" aria-labelledby="offcanvasLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         
+   
+        <ul class="navbar-nav  mb-2 mb-lg-0 " style="margin-left: 150px;">
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">Home</a>
+          </li>
+         
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">GOLD</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">DIAMOND</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">
+              RINGS</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">
+              
+BESTSELLERS</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link text-black me-5" href="#">
+              
+MIA
+</a>
+          </li>
+
+          
+
+          
+          <li class="nav-item">
+            <a class="nav-link text-black me-2" href="cart.html">
+              Cart
+              </a>
+          </li>
+
+          
+          
+
+         
+
+        </ul>
+       </div>
+     </div>
+</header>
+    
+    <section>
+       <div class="container">
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quntity</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd891c225/images/hi-res/50D2CADAEAGA29_1.jpg?sw=640&sh=640" style="width: 150px;" alt=""></td>
+              <td>$49.99</td>
+              <td>
+                <div class="d-flex ">
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="increment">
+                    +
+                  </span>
+                  <span class="mx-3" id="count">0</span>
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="decrement">
+                    -
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6b789791/images/hi-res/74D4B3FXSAA04_1.jpg" style="width: 150px;" alt=""></td>
+              <td>$89.99</td>
+              <td>  <div class="d-flex ">
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="plus">
+                    +
+                  </span>
+                  <span class="mx-3" id="show">0</span>
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="minus">
+                    -
+                  </span>
+                </div></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw7cac20ac/images/hi-res/502660FARAA09_1.jpg" style="width: 150px;" alt=""></td>
+              <td>$99.99</td>
+              <td>  <div class="d-flex ">
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="increment">
+                    +
+                  </span>
+                  <span class="mx-3" id="count">0</span>
+                  <span style="background-color: #9a4747;border-radius: 5px;color: white;" class="p-1 px-2" id="decrement">
+                    -
+                  </span>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+    </section>
+   
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+       let counter=0;
+      let ok=0;
+const increments=document.getElementById("increment");
+const decrements=document.getElementById("decrement");
+const counts=document.getElementById("count");
+
+
+const pluss=document.getElementById("plus");
+const minuss=document.getElementById("minus");
+const shows=document.getElementById("show");
+
+
+increments.addEventListener('click',() =>{
+    counter++;
+    counts.innerHTML=counter;
+});
+
+decrements.addEventListener('click',() =>{
+    if(counter > 0){
+        counter--;
+    }
+    counts.innerHTML=counter;
+});
+
+
+
+plus.addEventListener('click',() =>{
+    ok++;
+    show.innerHTML=ok;
+});
+
+minus.addEventListener('click',() =>{
+    if(ok > 0){
+        ok--;
+    }
+    show.innerHTML=ok;
+});
+
+
+    </script>
+</body>
+</html>
